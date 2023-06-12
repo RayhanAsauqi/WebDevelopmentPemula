@@ -1,0 +1,98 @@
+/* Tambahkan kode CSS kalian di file ini */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  /* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(39, 39, 40, 0.8);
+    border-bottom: 1px solid #a5d7e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: black;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  
+  /* input */
+  
+  form{
+      justify-content: center;
+  }
+  
+  .box .form-input {
+      margin: 50px 40px 40px;
+  }
+  
+  #name,
+  #city,
+  #email,
+  #zip-code {
+      margin: 30px 50px 40px;
+      padding: 2rem;
+      /* background-color: aqua; */
+      flex: 1 1 45rem;
+      width: 50%;
+      object-fit: cover;
+      border: 5px solid black;
+      border-radius: 4rem;
+  }
+  
+  
+  
+  /* submit */
+  #submit-form{ 
+      border-radius: 1rem ;
+      margin: 30px 60px 40px;
+      padding: 1rem 60px;
+      color:#ffffff;
+      
+  }
+  
+  #submit-form{
+      background-color: rgb(33, 33, 33);
+  }
+  
+  /* footer */
+  
+  footer {
+      background-color:rgba(39, 39, 40, 0.8);
+      text-align: center;
+      padding: 1rem 0 3rem;
+      margin-top: 3rem;
+  }
+  
+  .links a{
+      margin:auto;
+  }
